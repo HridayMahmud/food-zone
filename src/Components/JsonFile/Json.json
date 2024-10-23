@@ -1,0 +1,27 @@
+[
+               {
+                 "id": 1,
+                 "recipe_name": "Classic Lasagna",
+                 "recipe_img": "https://i.postimg.cc/MZbLhfnB/pancake.jpg",
+                 "recipe_title": "A traditional Italian dish with layers of pasta, meat sauce, and cheese."
+               },
+               {
+                 "id": 2,
+                 "recipe_name": "Chicken Alfredo",
+                 "recipe_img": "https://i.postimg.cc/SNSPqQ9v/eggsforbreakfast.jpg",
+                 "recipe_title": "Creamy Alfredo sauce over tender chicken and fettuccine pasta."
+               },
+               {
+                 "id": 3,
+                 "recipe_name": "Vegetarian Stir-Fry",
+                 "recipe_img": "https://i.postimg.cc/fT8rb4jT/breakfastessentials.jpg",
+                 "recipe_title": "A colorful mix of vegetables stir-fried with soy sauce and sesame oil."
+               },
+               {
+                 "id": 4,
+                 "recipe_name": "Beef Tacos",
+                 "recipe_img": "https://i.postimg.cc/0NkFfpGZ/cereal-bowl-milk-dark-wooden-background.jpg",
+                 "recipe_title": "Spiced beef wrapped in soft tortillas with fresh salsa and avocado."
+               }
+             ]
+             
