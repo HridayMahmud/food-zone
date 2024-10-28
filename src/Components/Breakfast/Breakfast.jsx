@@ -1,10 +1,12 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
-import data from './../JsonFile/Json.json'
-import DisplayEachData from '../DisplayEachData/DisplayEachData'
+import { Link, Navigate, useLoaderData } from 'react-router-dom'
+import Ditaileditem from '../DisplayDetailedItem/Ditaileditem';
+
+
+
 const Breakfast = () => {
-             //  const data = useLoaderData();
-               console.log(data)
+               const data2 = useLoaderData();
+            
   return (
     <div>
       <div className='breakfast '></div>
@@ -25,10 +27,15 @@ const Breakfast = () => {
     
       <div className='px-16'>
       <h1 className="text-2xl  font-normal ">THE CLASSICS</h1>
-      <div className='grid  grid-cols-1 md:grid-cols-3 '>
-     
+      <div className='grid  grid-cols-1 md:grid-cols-3 gap-3 '>
       {
-       data.map(eachdata=><DisplayEachData key={eachdata.id} eachdata={eachdata} ></DisplayEachData>)
+       data2.map(eachdata=><div key={eachdata.id} className='relative each-data shadow-md shadow-gray-400 rounded-lg '>
+       
+     <img className='w-[450px] p-10 h-[450px] ' src={eachdata.recipe_img} alt="" />
+  
+    <Link to='/detail'><h1  className='text-2xl text-white absolute bottom-16 left-16  font-bold '> {eachdata.recipe_name}</h1></Link>
+    
+    </div>)
       }
       </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import image from '../../assets/Image/logo.png'
 import { IoSearchOutline } from "react-icons/io5";
 import { FiBookmark } from "react-icons/fi";
@@ -18,11 +18,13 @@ const Header = () => {
   return (
     <div>
       <nav className='flex justify-center gap-2 md:gap-0 md:justify-between px-[70px] items-start md:items-center text-sm md:text-lg font-semibold py-7  text-white bg-[#000000]'>
-           <div className="navbar-text flex flex-col md:flex-row items-center gap-6 ">
+           
+           
+           <div className="navbar_text flex flex-col md:flex-row items-center gap-6 ">
              
                <Link to='/foods'><img className=' w-[100px]' src={image} alt="" /></Link>
                <Link onMouseEnter={handleOntouch} onMouseLeave={handlemouseleave} to='#'>RACIPES
-               <div className={`flex w-[300px] font-normal  flex-col absolute px-5 py-6 bg-black ${touch?'block' : 'hidden'}`}>
+               <div className={`sublink flex w-[300px] font-normal  flex-col absolute px-5 py-6 bg-black ${touch?'block' : 'hidden'}`}>
                 <Link to='/breakfast'>Breakfast & Brunch Recipes</Link>
                 <Link to='/lunch'>Lunch Recipes</Link>
                 <Link to='/snacks'>Appetizers & Snack Recipes</Link>
@@ -30,7 +32,8 @@ const Header = () => {
                 <Link to='/dessert'>Dessert Recipes</Link>
                </div>
                </Link>
-               <Link to='/popular'>POPULAR</Link>
+          
+               <NavLink to ='/popular'>POPULAR</NavLink>
                <Link to='/meat-and-seafood'>MEAT & SEAFOOD</Link>
                <Link to='/healthy-and-diet'>HEALTHY & DIET</Link>
                <Link to='/holidays'>HOLIDAYS</Link>
